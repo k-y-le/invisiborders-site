@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
+}
+.pb {
+  padding-bottom: 5vh;
+}
+.np {
+  padding: 0;
+}
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+#main-img {
+  max-width: 100%;
+}
+#small-img {
+  display: none;
+  max-width: 100%;
+}
+.video {
+  width: 560px;
+  height: 315px;
+}
+.invis {
+  color: white;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #main-img {
+    display: none;
+  }
+  #small-img {
+    display: block;
+  }
+  .v-lines {
+    height: 300px;
+    max-width: 100%;
+  }
+  .video {
+    max-width: 100%;
+    height: 300px;
+  }
+}
+
+.path {
+  stroke-dasharray: 2121;
+  stroke-dashoffset: 2121;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2121;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
