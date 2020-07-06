@@ -10,6 +10,10 @@ body {
 .np {
   padding: 0;
 }
+.px {
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
 a {
   color: white;
   text-decoration: underline;
